@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Task03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script>
+        function Multiplynum()
+        {
+            var num1=parseInt(document.getElementById("num1").value);
+            var num2=parseInt(document.getElementById("num2").value);
+            var mulnum=num1*num2;
+            document.getElementById("sol").innerHTML=parseInt(mulnum);
+        }
+        function Dividenum(){
+            var num1=parseInt(document.getElementById("num1").value);
+            var num2=parseInt(document.getElementById("num2").value);
+            var divnum=num1/num2;
+            document.getElementById("sol").innerHTML=divnum;
+        }
+    </script>
+    <style>
+        div{
+            margin-left:35%;
+            margin-top: 50px;
+            margin-right: 35%;
+            padding-left: 50px;
+            padding-bottom: 50px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center; padding-top: 20px;">Mathematical Operations</h2>
+    <div class="pt-5">
+        <label><b>1st Number : </b></label>
+        <input type="number" placeholder="Enter 1st Number" id="num1"></input><br/><br/>
+        <label><b>2nd Number : </b></label>
+        <input type="number" placeholder="Enter 2nd Number" id="num2"></input><br/><br/>
+        <button onclick="Multiplynum()" class="btn bg-secondary text-light">Multiply</button>
+        <button onclick="Dividenum()" class="btn bg-secondary text-light">Divide</button>
+        <br><br>
+        <p>The Result is :</p>
+        <span id="sol"></span>
+    </div>
+</body>
+</html>

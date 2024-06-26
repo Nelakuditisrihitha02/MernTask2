@@ -1,0 +1,33 @@
+#initial{
+    background-color: rgb(83, 188, 230);
+    text-align: center;
+    height: 8vh;
+    padding-top: 9px;
+}
+#main{
+  text-align: center;
+  height: 8vh;
+  background-color:rgb(107, 107, 107);
+  display: flex;
+  padding-top: 11px;
+  padding-left: 30px;
+  color: white;
+}
+#content{
+  height: 400px;
+  display: flex;
+
+}
+#hlo{
+  height: 100%;
+  width:85%;
+  background-color: rgb(243, 248, 252);
+  text-align: center;
+}
+#hii{
+  background-color: rgb(87, 86, 86);
+  height: 128%;
+  width:20%;
+  text-align: center;
+  color: white;
+}
